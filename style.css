@@ -1,0 +1,31 @@
+@font-face {
+  font-family: CormorantGaramond-Bold;
+  src: url(./assets/fonts/CormorantGaramond-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: CormorantGaramond-Italic;
+  src: url(./assets/fonts/CormorantGaramond-Italic.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: CormorantGaramond-Regular;
+  src: url(./assets/fonts/CormorantGaramond-Regular.ttf);
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
