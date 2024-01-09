@@ -1,3 +1,9 @@
+:root {
+  --color-text: hsla(0, 0%, 20%, 1);
+  --color-background: hsla(60, 17%, 90%, 1);
+  --color-links: hsla(203, 5%, 48%, 1);
+}
+
 @font-face {
   font-family: CormorantGaramond-Bold;
   src: url(./assets/fonts/CormorantGaramond-Bold.ttf);
@@ -16,16 +22,52 @@
   font-weight: 400;
 }
 
+/* ! BASIC STYLES */
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html {
+.wrapper {
   min-height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  padding-top: 1rem;
+  font-family: CormorantGaramond-Regular;
 }
 
 img {
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ! HEADER */
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  font-family: CormorantGaramond-Bold;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 4px solid var(--color-text);
+  border-top: 4px solid var(--color-text);
+  padding: 0.5rem 0;
 }
